@@ -35,24 +35,25 @@ chat.reply('hello').then(message => {
 ```js
 const Discord = require('discord.js');
 const chat = require('@typicalninja21/chatbot.js')
-
+ 
 const client = new Discord.Client()
-
+ 
 client.once('ready', async () => {
 console.log('ready')
 });
-
+ 
 client.on('message', async message => {
-
+ 
   if (!message.channel.guild) return;
   
   if(message.author.bot) return;
   
-  if (message.channel.name == `channel-name`) {
-
-chat.reply('hello').then(message => {
-    message.channel.send(message.response) // hello how are you
+  if (message.channel.name == `general`) {
+ 
+chat.reply('hello').then(msg => {
+    message.channel.send(msg.response) // hello how are you
 })
+}
 });
-client.login('super secret bot token');
+client.login('Bot token');
 ```
