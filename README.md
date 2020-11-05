@@ -4,6 +4,8 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@typicalninja21/chatbot.js.svg)](https://www.npmjs.com/package/@typicalninja21/chatbot.js)
 
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@typicalninja21/chatbot.js.svg)](https://www.npmjs.com/package/@typicalninja21/chatbot.js)
+
 npm package chatbot.js 
 
 
