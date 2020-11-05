@@ -14,14 +14,41 @@ $ npm i @typicalninja21/chatbot.js
 ## Usage
 
 ```js
-const reply = require('@typicalninja21/chatbot.js')
+const chat = require('@typicalninja21/chatbot.js')
 
-tiny("So much space!");
-//=> "Somuchspace!"
 
-tiny(1337);
-//=> Uncaught TypeError: Tiny wants a string!
-//    at tiny (<anonymous>:2:41)
-//    at <anonymous>:1:1
+
+chat.reply('hello').then(message => {
+    console.log(message.response) // hello how are you
+})
 ```
 
+
+### usage in a discord bot
+
+
+
+```js
+const Discord = require('discord.js');
+const chat = require('@typicalninja21/chatbot.js')
+
+const client = new Discord.Client()
+
+client.once('ready', async () => {
+console.log('ready')
+});
+
+client.on('message', async message => {
+
+  if (!message.channel.guild) return;
+  
+  if(message.author.bot) return;
+  
+  if (message.channel.name == `channel-name`) {
+
+chat.reply('hello').then(message => {
+    message.channel.send(message.response) // hello how are you
+})
+});
+client.login('super secret bot token');
+```
