@@ -2,6 +2,8 @@
 
 [![GitHub license](https://img.shields.io/github/license/typicalninja493/chatbot.js-)](https://github.com/typicalninja493/chatbot.js-/blob/main/LICENSE)
 
+[![npm (scoped)](https://img.shields.io/npm/v/@typicalninja21/chatbot.js.svg)](https://www.npmjs.com/package/@typicalninja21/chatbot.js)
+
 npm package chatbot.js 
 
 
