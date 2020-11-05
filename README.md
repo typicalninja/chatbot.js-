@@ -5,3 +5,23 @@
 npm package chatbot.js 
 
 
+## Install
+
+```
+$ npm i @typicalninja21/chatbot.js
+```
+
+## Usage
+
+```js
+const reply = require('@typicalninja21/chatbot.js')
+
+tiny("So much space!");
+//=> "Somuchspace!"
+
+tiny(1337);
+//=> Uncaught TypeError: Tiny wants a string!
+//    at tiny (<anonymous>:2:41)
+//    at <anonymous>:1:1
+```
+
