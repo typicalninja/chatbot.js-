@@ -1,3 +1,7 @@
+> This was my first npm package!! and it was only about 6 lines and only did was request to a api : ) anyway this is discontinued
+
+
+
 # @typicalninja/chatbot.js
 
 [![NPM](https://nodei.co/npm/@typicalninja21/chatbot.js.png)](https://nodei.co/npm/@typicalninja21/chatbot.js)
@@ -14,19 +18,13 @@ npm package chatbot.js
 ## Install
 
 ```
-$ npm i @typicalninja21/chatbot.js
+$ npm i nothing-ness
 ```
 
 ## Usage
 
 ```js
-const chat = require('@typicalninja21/chatbot.js')
-
-
-
-chat.reply('hello').then(message => {
-    console.log(message.response) // hello how are you
-})
+Haha no code for you bud, go checkout some other package : )
 ```
 
 
@@ -35,27 +33,5 @@ chat.reply('hello').then(message => {
 
 
 ```js
-const Discord = require('discord.js');
-const chat = require('@typicalninja21/chatbot.js')
- 
-const client = new Discord.Client()
- 
-client.once('ready', async () => {
-console.log('ready')
-});
- 
-client.on('message', async message => {
- 
-  if (!message.channel.guild) return;
-  
-  if(message.author.bot) return;
-  
-  if (message.channel.name == `general`) {
- 
-chat.reply('hello').then(msg => {
-    message.channel.send(msg.response) // hello how are you
-})
-}
-});
-client.login('Bot token');
+Haha no code for you bud, go checkout some other package : )
 ```
